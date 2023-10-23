@@ -14,21 +14,20 @@
 			$json = file_get_contents("https://v2.jokeapi.dev/joke/Any?lang=fr&blacklistFlags=nsfw,religious,political,sexist,explicit");
 			$parsed_json = json_decode($json);
 			
+			$idBlague = $parsed_json->{"id"};
 			$question = $parsed_json->{"setup"};
 			$reponse = $parsed_json->{"delivery"};
-			$idBlague = $parsed_json->{"id"};
 			
 			// Affichage de la première ligne du tableau:
 			// ------------------------------------------
 			// echo "<p class=\"date\">Date & heure: ${date_jour}";
 			echo "<p>";
-			
-			echo "<p class=\"grandTotal\"> $idBlague";
-      			echo "<p class=\"grandTotal\"> $question";
-      			echo "<p class=\"grandTotal\"> $reponse";
+			echo "<p class=\"blague\"> $idBlague";
+      		echo "<p class=\"question\"> $question";
+      		echo "<p class=\"reponse\"> $reponse";
 		?>
 	</body>
-	<footer>&copy Nicolas - <?php echo date("Y"); ?> /footer>
+	<footer>&copy Nicolas - <?php echo date("Y"); ?> </footer>
 </html>
 
 
