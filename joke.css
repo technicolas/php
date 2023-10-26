@@ -1,28 +1,18 @@
-body {
-	font-family: Tahoma, Helvetica, sans-serif;
-	font-size: 14px;
-	background-color: #FAB;
+.header {
+  border: 1px solid red;
+  padding: 15px;
 }
 
-a {font-size:3em; 
-        line-height: 10%;
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, serif;
-        border-block-start-width: 1px;}
-
-footer    {
-    background: #BAF;
-    border-style: solid;
-    border-width: 1px;
-    border-radius: 10px;
-    display: block;
-    width: 30%;
-    height: 150px;
-    font-family: courier, serif;
-    text-align: left;
-    margin: 1em 5px 1em;
-    padding: 1em;
+.menu {
+  width: 25%;
+  float: left;
+  padding: 15px;
+  border: 1px solid red;
 }
 
-footer > div > p > i {
-    font-size: 16px;
+.main {
+  width: 75%;
+  float: left;
+  padding: 15px;
+  border: 1px solid red;
 }
