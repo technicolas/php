@@ -10,10 +10,6 @@
   			<h1><a href="<?php $_SERVER['PHP_SELF']; ?>">Actualiser la page</a></h1>
 		</div>
 		
-		<div class="menu">
-			<h1><a>A écrire...</a></h1>
-		</div>
-
 		<div class="main">
 			<?php
 
@@ -26,16 +22,18 @@
 				$reponse = $parsed_json->{"delivery"};
 				
 				// Affichages
-				echo "Nous sommes le " . date("d.m.Y") . " et je vous propose cette petite blague:" . "<br>";
+				echo "Nous sommes le " . date("d.m.Y") . " et je vous propose la blague n°: " .  $idBlague . "<br>";
 				echo "<p>";
-				echo "<p class=\"blague\"> $idBlague";
+				//echo "<p class=\"blague\"> $idBlague";
 	      		echo "<p class=\"question\"> $question";
 	      		echo "<p class=\"reponse\"> $reponse";
 			?>
 		</div>
+
+		<div class="footer">
+			<h1>&copy Nicolas - <?php echo date("Y"); ?> </h1>
+		</div>
 	</body>
-	
-	<footer>&copy Nicolas - <?php echo date("Y"); ?> </footer>
 </html>
 
 
