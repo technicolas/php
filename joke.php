@@ -1,7 +1,7 @@
 <html>
 	<head>
 		<meta charset="utf-8" />
-		<title>La blague du jour (source -> https://official-joke-api.appspot.com/)</title>
+		<title>Blague à la demande (source -> https://official-joke-api.appspot.com/)</title>
 		<link rel="stylesheet" type="text/css" href="joke.css" />
 	</head>
 
@@ -35,5 +35,3 @@
 		</div>
 	</body>
 </html>
-
-
